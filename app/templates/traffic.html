@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-<%= columnWidth %> matchHeight">
+
+    <div class="border-outline" style="border-color:<%= borderColour %>;background-color:<%= bgColour %>;color:<%= bodyColour %>;">
+
+        <h2 style="color:<%= headingColour %>;"><%= heading %></h2>
+        <h5><%= tagline %></h5>
+
+        <div id="content-slider-1" class="royalSlider contentSlider rsDefault">
+
+            <% _.each(trafficCameras, function(obj) { %>
+            <div>
+                <img class="rsImg" src="<%= obj.href %>" data-rsw="352" data-rsh="288" >
+                <p style=""><%= obj.view %></p>
+
+            </div>
+            <% }) %>
+
+        </div>
+    </div>
+
+</div>

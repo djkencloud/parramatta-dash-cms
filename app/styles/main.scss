@@ -1,0 +1,218 @@
+@import "fonts.scss";
+@import "bootstrap-grid.scss";
+@import "mapbox.scss";
+@import "royalSlider.scss";
+
+$grey: #efefef;
+$darkGrey: #949599;
+
+$lightblue: #91d4e7;
+$red: #ef4e22;
+
+.font-red {
+    color: $red;
+}
+.font-lightblue {
+    color: $lightblue;
+}
+.font-white {
+    color: white;
+}
+
+body {
+  //background: url(../images/009-subtle-light-patterns.gif) repeat 0 0;
+  @include proxima-nova-light;
+  color: #333;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    @include jubilat-semibold;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4 {
+    @include jubilat-semibold;
+    font-size: 26px;
+}
+h5 {
+    font-size: 16px;
+    line-height: 20px;
+    @include proxima-nova-semibold;
+}
+p {
+    font-size: 15px;
+    @include proxima-nova-light;
+}
+a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    @include proxima-nova-semibold;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+header {
+    img {
+        margin-top: 10px;
+        display: inline-block;
+        float: left;
+    }
+
+    .western-logo {
+        padding: 10px;
+        float: right;
+    }
+}
+
+.border-outline {
+    padding: 10px;
+    border: 1px solid $grey;
+    overflow: hidden;
+}
+
+
+@media all and (max-width: 768px) {
+    .border-outline {
+        margin-bottom: 15px;
+    }
+}
+
+
+#intro-text {
+    padding-bottom: 10px;
+}
+
+#instagram-widget iframe {
+    height: 480px !important;
+    overflow: hidden;
+
+}
+#twitter-widget-0 {
+    height: 480px !important;
+}
+
+// vimeo containers.
+.responsive-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.divider {
+    display: block;
+    border-top: 1px solid #d8dcdc;
+    border-bottom: 1px solid white;
+    margin: 20px 0 10px 0;
+    visibility: visible;
+    clear: both;
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 40px solid transparent;
+}
+
+//
+
+.factoid {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 36px;
+    @include proxima-nova-light;
+}
+
+@media all and (max-width: 1200px) {
+
+    .factoid {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+}
+
+
+
+/////
+.rect {
+    fill: #2ca25f;
+}
+
+.axis, .bar-label {
+    @include proxima-nova-light;
+    font-size: 10px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.select-holder {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 180px;
+}
+
+.royalSlider p {
+    max-width: 352px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+////
+.thick-black {
+    display: block;
+    position: relative;
+    width: 100%;
+    content: "";
+    border-top: 4px solid black;
+
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+    visibility: visible;
+    clear: both;
+    float: left;
+}
+

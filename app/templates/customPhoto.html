@@ -1,0 +1,20 @@
+<div class="col-xs-12 col-sm-<%= columnWidth %> matchHeight">
+
+    <div class="border-outline" style="border-color:<%= borderColour %>;background-color:<%= bgColour %>;color:<%= bodyColour %>;">
+
+        <h2 style="color:<%= headingColour %>;"><%= heading %></h2>
+        <h5><%= tagline %></h5>
+
+        <%= html %>
+
+        <% if (imagelink !== "") { %>
+            <a href="<%= imagelink  %>" target="_blank">
+                <img src="http://photos.osmek.com/<%= photoId %>" width="100%" height="auto" alt="image" />
+            </a>
+        <% } else { %>
+            <img src="http://photos.osmek.com/<%= photoId %>" width="100%" height="auto" alt="image" />
+        <% } %>
+
+    </div>
+
+</div>
